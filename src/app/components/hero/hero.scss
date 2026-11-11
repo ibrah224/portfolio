@@ -1,0 +1,30 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 7rem;
+  }
+  
+  .hello { color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
+  
+  h1 {
+    font-size: clamp(2.4rem, 7vw, 4.5rem);
+    line-height: 1.1;
+    span {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+  
+  h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 500;
+    color: var(--muted);
+    margin: 0.5rem 0 1.5rem;
+  }
+  
+  .desc { max-width: 560px; color: var(--muted); margin-bottom: 2rem; }
+  .actions { display: flex; gap: 1rem; flex-wrap: wrap; }

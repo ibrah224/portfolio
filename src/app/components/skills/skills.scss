@@ -1,0 +1,9 @@
+.groups { display: grid; gap: 2rem; }
+h3 { margin-bottom: 1rem; color: var(--muted); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.7rem; span {
+  background: var(--card);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  transition: background 0.2s, color 0.2s;
+  &:hover { background: var(--accent); color: #fff; }
+} }

@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-skills',
-  styleUrl: './skills.scss',
+  imports: [],
   templateUrl: './skills.html',
+  styleUrl: './skills.scss'
 })
-export class Skills {}
+export class Skills {
+  groups = [
+    { title: 'Frontend', items: ['HTML', 'CSS / SCSS', 'JavaScript', 'TypeScript', 'Angular'] },
+    { title: 'Backend & Données', items: ['Node.js', 'Python', 'Java', 'SQL / MySQL', 'MongoDB'] },
+    { title: 'Outils', items: ['Git & GitHub', 'VS Code', 'Linux', 'Vercel'] },
+  ];
+}

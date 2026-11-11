@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg: #0b1020;
+    --bg-soft: #121a30;
+    --card: #161f3a;
+    --text: #e6e9f2;
+    --muted: #9aa4bf;
+    --accent: #6c8cff;
+    --accent-2: #9b6bff;
+    --radius: 16px;
+  }
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  html { scroll-behavior: smooth; }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  app-navbar, app-hero, app-about, app-projects, app-skills, app-contact {
+    display: block;
+  }
+  
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+    scroll-margin-top: 4rem;
+  }
+  
+  h2 { font-size: 2rem; margin-bottom: 2rem; }
+  h2 span { color: var(--accent); }
+  a { color: inherit; text-decoration: none; }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn.primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #fff; }
+  .btn.ghost { border: 1px solid var(--accent); color: var(--accent); }

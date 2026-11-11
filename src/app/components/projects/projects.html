@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<section id="projets">
+    <h2>Mes <span>projets</span></h2>
+    <div class="grid">
+      @for (p of projects; track p.title) {
+        <article class="card">
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.description }}</p>
+          <div class="tags">
+            @for (t of p.tags; track t) {
+              <span>{{ t }}</span>
+            }
+          </div>
+          <a [href]="p.github" class="link">Voir le code →</a>
+        </article>
+      }
+    </div>
+  </section>

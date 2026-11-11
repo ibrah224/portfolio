@@ -1,1 +1,9 @@
-<p>navbar works!</p>
+<header class="nav">
+    <a href="#accueil" class="logo">Thierno<span>.</span></a>
+    <button class="burger" (click)="open = !open" aria-label="Menu">☰</button>
+    <nav [class.open]="open">
+      @for (link of links; track link.href) {
+        <a [href]="link.href" (click)="open = false">{{ link.label }}</a>
+      }
+    </nav>
+  </header>

@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-navbar',
-  styleUrl: './navbar.scss',
+  imports: [],
   templateUrl: './navbar.html',
+  styleUrl: './navbar.scss'
 })
-export class Navbar {}
+export class Navbar {
+  open = false;
+  links = [
+    { label: 'Accueil', href: '#accueil' },
+    { label: 'À propos', href: '#apropos' },
+    { label: 'Projets', href: '#projets' },
+    { label: 'Compétences', href: '#competences' },
+    { label: 'Contact', href: '#contact' },
+  ];
+}
