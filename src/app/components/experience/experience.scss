@@ -1,0 +1,38 @@
+.timeline { display: grid; gap: 1.25rem; }
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(165px, 0.5fr) 2fr;
+  gap: 1.5rem;
+  padding: 1.6rem;
+  background: var(--card);
+  border: 1px solid rgba(108, 140, 255, 0.16);
+  border-radius: var(--radius);
+  transition: transform 0.25s, border-color 0.25s;
+
+  &:hover { transform: translateY(-4px); border-color: var(--accent); }
+}
+
+.period { color: var(--accent); font-weight: 700; }
+h3 { font-size: 1.2rem; }
+.organization { color: var(--text); font-weight: 600; margin-top: 0.25rem; }
+.description { color: var(--muted); margin-top: 0.75rem; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  span {
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(108, 140, 255, 0.15);
+    color: var(--accent);
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-card { grid-template-columns: 1fr; gap: 0.7rem; }
+}

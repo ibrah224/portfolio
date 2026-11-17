@@ -1,0 +1,20 @@
+<section id="autres-competences">
+  <h2>Autres <span>compétences</span></h2>
+  <div class="groups">
+    @for (group of groups; track group.title) {
+      <article class="group">
+        <h3>{{ group.title }}</h3>
+        <ul>
+          @for (item of group.items; track item.name) {
+            <li>
+              <span>{{ item.name }}</span>
+              @if (item.level) {
+                <small>{{ item.level }}</small>
+              }
+            </li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</section>

@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class Skills {
   groups = [
     { title: 'Frontend', items: ['HTML', 'CSS / SCSS', 'JavaScript', 'TypeScript', 'Angular'] },
-    { title: 'Backend & Données', items: ['Node.js', 'Python', 'Java', 'SQL / MySQL', 'MongoDB'] },
+    { title: 'Backend & Données', items: ['Node.js', 'Python', 'Java', 'PHP', 'C++', 'SQL / MySQL', 'MongoDB'] },
     { title: 'Outils', items: ['Git & GitHub', 'VS Code', 'Linux', 'Vercel'] },
   ];
 }

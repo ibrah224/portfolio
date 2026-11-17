@@ -1,0 +1,20 @@
+<section id="experience">
+  <h2>Expérience <span>professionnelle</span></h2>
+  <div class="timeline">
+    @for (experience of experiences; track experience.title) {
+      <article class="experience-card">
+        <p class="period">{{ experience.period }}</p>
+        <div class="content">
+          <h3>{{ experience.title }}</h3>
+          <p class="organization">{{ experience.organization }}</p>
+          <p class="description">{{ experience.description }}</p>
+          <div class="tags" aria-label="Compétences acquises">
+            @for (highlight of experience.highlights; track highlight) {
+              <span>{{ highlight }}</span>
+            }
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>

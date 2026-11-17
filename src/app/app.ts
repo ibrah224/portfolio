@@ -4,11 +4,13 @@ import { Hero } from './components/hero/hero';
 import { About } from './components/about/about';
 import { Projects } from './components/projects/projects';
 import { Skills } from './components/skills/skills';
+import { Experience } from './components/experience/experience';
+import { OtherSkills } from './components/other-skills/other-skills';
 import { Contact } from './components/contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, About, Projects, Skills, Contact],
+  imports: [Navbar, Hero, About, Projects, Skills, Experience, OtherSkills, Contact],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

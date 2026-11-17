@@ -13,6 +13,8 @@ export class Navbar {
     { label: 'À propos', href: '#apropos' },
     { label: 'Projets', href: '#projets' },
     { label: 'Compétences', href: '#competences' },
+    { label: 'Expérience', href: '#experience' },
+    { label: 'Autres atouts', href: '#autres-competences' },
     { label: 'Contact', href: '#contact' },
   ];
 }
